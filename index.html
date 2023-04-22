@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>F2: Contest 2</title>
+</head>
+
+<body>
+    <div class="main">
+        <!-- Heading -->
+        <p class="heading">Filter ui cards via their profession.</p>
+
+        <!-- Filter options -->
+        <select name="profession" id="filter">
+            <option value="none" selected>Profession</option>
+            <option value="developer">Developer</option>
+            <option value="admin">Admin</option>
+        </select>
+
+        <!-- Table data -->
+        <table id="users-table">
+            <tr>
+                <td>1.</td>
+                <td>Name: john</td>
+                <td>Profession: developer</td>
+                <td>Age: 18</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>Name: jack</td>
+                <td>Profession: developer</td>
+                <td>Age: 20</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>Name: karen</td>
+                <td>Profession: admin</td>
+                <td>Age: 19</td>
+            </tr>
+        </table>
+
+        <!-- Filter button -->
+        <button class="btn-filter">Filter</button>
+
+        <!-- Add user -->
+        <p class="new-user">Add a new user</p>
+
+        <!-- Form -->
+        <div class="form">
+            <div class="section">
+                <label for="name">Enter Name</label>
+                <input type="text" id="new-name">
+            </div>
+            <div class="section">
+                <label for="profession">Enter Profession</label>
+                <input type="text" id="new-profession">
+            </div>
+            <div class="section">
+                <label for="age">Enter Age</label>
+                <input type="number" id="new-age">
+            </div>
+        </div>
+
+        <!-- Add user button -->
+        <button class="btn-add">Add User</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
